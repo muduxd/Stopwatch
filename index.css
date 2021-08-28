@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  height: 100%;
+  color: white;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+#container {
+  margin-top: 25vh;
+}
+
+#timer,
+#btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+button {
+  margin: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 30px;
+  width: 250px;
+}

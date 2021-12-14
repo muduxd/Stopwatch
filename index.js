@@ -1,7 +1,4 @@
-const hoursSpan = document.getElementById("hours");
-const minutesSpan = document.getElementById("minutes");
-const secondsSpan = document.getElementById("seconds");
-const millisecondsSpan = document.getElementById("milliseconds");
+const timer = document.getElementById("timer");
 
 let milliseconds, seconds, minutes, hours, started;
 
@@ -13,10 +10,7 @@ const initialValues = () => {
 
   started = false;
 
-  hoursSpan.innerText = "00";
-  minutesSpan.innerText = "00";
-  secondsSpan.innerText = "00";
-  millisecondsSpan.innerText = "00";
+  timer.innerText = `00:00:00:00`;
 };
 
 initialValues();
@@ -38,10 +32,7 @@ const main = () => {
       minutes = 0;
     }
 
-    hoursSpan.innerText = hours > 9 ? hours : `0${hours}`;
-    minutesSpan.innerText = minutes > 9 ? minutes : `0${minutes}`;
-    secondsSpan.innerText = seconds > 9 ? seconds : `0${seconds}`;
-    millisecondsSpan.innerText = milliseconds > 9 ? milliseconds : `0${milliseconds}`;
+    timer.innerText = `${hours > 9 ? hours : "0" + hours}:${minutes > 9 ? minutes : "0" + minutes}:${seconds > 9 ? seconds : "0" + seconds}:${milliseconds > 9 ? milliseconds : "0" + milliseconds}`;
 
     milliseconds++;
   }

@@ -1,27 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-  height: 100%;
+
+* {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
   color: white;
-  background-color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 60px;
-  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+  background-color: black;
+}
+
 
 #container {
-  margin-top: 25vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+
+
+#title {
+  letter-spacing: 6.5px;
+  font-weight: 600;
+  font-size: 60px;
+  cursor: default;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  word-wrap: break-word;
+  transition: 0.2s;
+}
+
+#title:hover {
+  color: grey;
+  transition: 0.2s;
+}
+
+
+
+#timer {
+  cursor: default;
+  text-align: center;
+  margin: 10px auto;
+  letter-spacing: 3px;
+  word-break: break-word;
+  white-space: none;  
+  transition: 0.2s;
+}
+
+#timer:hover {
+  color: grey;
+  transition: 0.2s;
+}
+
+
 button {
+  font-size: 20px;
   margin: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: lighter;
-  font-size: 30px;
+  padding: 10px 30px;
   background-color: black;
-  color: white;
-  border-color: white;
-  border-radius: 30px;
-  width: 250px;
+  border: 3px solid white;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.2s;
 }
